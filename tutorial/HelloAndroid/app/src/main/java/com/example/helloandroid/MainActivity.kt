@@ -10,8 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var isTapped: Boolean = false
         tapHere.setOnClickListener{
-            textView.text = "ボタンがタップされました"
+            if (isTapped) {
+                isTapped  = false
+                textView.text = "ボタンがタップされました"
+            } else {
+                isTapped = true
+                textView.text = "ちわ！あんどろいど"
+            }
         }
     }
 }
