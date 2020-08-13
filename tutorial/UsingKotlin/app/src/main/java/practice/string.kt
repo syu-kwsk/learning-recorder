@@ -29,4 +29,10 @@ fun main() {
     println(a === b) // オブジェクト比較
     println(a == b) // 値比較
 
+    val i = 10
+    println("i = $i")
+
+    val s = "Kotlin"
+    println("$s length is ${s.length}")
+
 }
