@@ -1,4 +1,4 @@
-package practice
+package practice.variableAndType
 
 fun main() {
     // to型名メソッドで型変換

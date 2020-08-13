@@ -1,4 +1,4 @@
-package practice
+package practice.variableAndType
 
 fun main() {
     //宣言は
