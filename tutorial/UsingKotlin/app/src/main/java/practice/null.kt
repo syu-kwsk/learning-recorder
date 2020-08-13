@@ -10,6 +10,6 @@ fun main() {
     var text: String? = null //耐え
 
     var s: String? = "kotlin"
-    s.toUpperCase() //エラー nullの可能性があるので実行できない
+    //s.toUpperCase() //エラー nullの可能性があるので実行できない
 
 }
