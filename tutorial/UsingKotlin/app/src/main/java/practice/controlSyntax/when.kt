@@ -33,4 +33,14 @@ fun main() {
         is String -> println(c.toUpperCase()) //castしなくていい
     }
 
+    // ifの代わりにwhen
+    val d: Int? = null
+    val text = "Kotlin"
+    when {
+        d != null && text.startsWith("Kot") -> //nullなので通過
+            println("starts with a prefix 'Kot'")
+        d == null && text.endsWith("lin") -> //ここに入る
+            println("ends with a suffix 'lin'")
+        else -> println("otherwise")
+    }
 }
