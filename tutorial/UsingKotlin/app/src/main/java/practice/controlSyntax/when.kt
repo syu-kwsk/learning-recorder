@@ -26,4 +26,11 @@ fun main() {
         else    -> "otherwise"
     }
     println(b)
+
+    val c: Any = "Kotlin" //すべてのクラスの親
+    when(c) {
+        is Int    -> print(a * a) //castしなくていい
+        is String -> println(c.toUpperCase()) //castしなくていい
+    }
+
 }
