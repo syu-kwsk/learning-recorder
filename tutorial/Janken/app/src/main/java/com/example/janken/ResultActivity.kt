@@ -42,10 +42,12 @@ class ResultActivity : AppCompatActivity() {
 
         //勝敗判定
         val gameResult = (comHand - myHand + 3) % 3
+        println("comHand:${comHand}, myHand:${myHand}")
         when(gameResult) {
             0 -> resultLabel.setText(R.string.result_draw)
             1 -> resultLabel.setText(R.string.result_win)
             2 -> resultLabel.setText(R.string.result_lose)
         }
+        backButton.setOnClickListener { finish() }
     }
 }
