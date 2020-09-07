@@ -10,4 +10,12 @@ fun main() {
     println(items[1])
     println(items.size)
 
+//    mutable
+    val numbers: MutableList<Int> = mutableListOf(2, 4, 6)
+    println(numbers)
+    numbers.add(4)
+    println(numbers) // [2, 4, 6, 4]
+    numbers.remove(4) // remove single specified element
+    println(numbers) // [2, 6, 4]
+
 }
