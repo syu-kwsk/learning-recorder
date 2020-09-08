@@ -14,4 +14,11 @@ fun main() {
     }
     printTimes(2, 3)
 
+//    argument, default argument
+    fun argTimes(a: Int, b: Int = 2) = a * b
+    println(argTimes(2)) // second arg is 2 by default
+//    named argument
+    fun calc(a: Int, b:Int=1, c:Int=1, d:Int=1) = a*b - c/d
+    println(calc(5, c = 4)) // 5*1 - 4/1 = 1
+
 }
