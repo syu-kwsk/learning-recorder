@@ -21,4 +21,10 @@ fun main() {
     println(lengthNullable("abcd"))
     println(lengthNullable(null))
 
+//    null check
+    val a:String?? ="kotlin"
+    if (a != null) { // check a is not null
+        println(a.toUpperCase()) //called without null safe operand
+    }
+
 }
