@@ -15,6 +15,13 @@ fun main() {
         println(message())
     }
 
+//    "apply" function
+//    return target object
+    var msg = Dog("Pochi").apply {
+        age = 10
+    }.message() // return string
+    println(msg)
+
 }
 
 class Dog(val name: String) {
