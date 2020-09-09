@@ -22,6 +22,21 @@ fun main() {
     }.message() // return string
     println(msg)
 
+//    "let" function
+//    without "let"
+//    need "?." in every time
+    var name: String? = "Peter"
+    var upperCase = name?.toUpperCase()
+    var len = name?.length
+    println("$upperCase $len")
+//    with "let"
+    var output = name?.let {
+        var upperCase = it.toUpperCase()
+        var len = it.length
+        "$upperCase $len" // return value
+    }
+    println(output)
+
 }
 
 class Dog(val name: String) {
