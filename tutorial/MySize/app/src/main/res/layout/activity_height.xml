@@ -49,4 +49,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+        <RadioButton
+            android:id="@+id/height1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="140" />
+
+        <RadioButton
+            android:id="@+id/height2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="150" />
+
+        <RadioButton
+            android:id="@+id/height3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="160" />
+
+        <RadioButton
+            android:id="@+id/height4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="170" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
