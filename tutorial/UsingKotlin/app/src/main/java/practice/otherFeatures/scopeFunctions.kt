@@ -37,6 +37,13 @@ fun main() {
     }
     println(output)
 
+//    "run" function
+//    "run" like "with" and "let"
+    var output2 = name?.run {
+        "${toUpperCase()} $length"
+    }
+    println(output2)
+
 }
 
 class Dog(val name: String) {
