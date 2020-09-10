@@ -1,5 +1,6 @@
 package com.example.mysize
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.edit
@@ -23,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         inseam.setText(editInseam)
 
         save.setOnClickListener { onSavedTapped() }
+
+        heightButton.setOnClickListener{
+            val intent = Intent(this, HeightActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun onSavedTapped() {
